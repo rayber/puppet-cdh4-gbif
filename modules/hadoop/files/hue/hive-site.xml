@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<?xml-stylesheet type="text/xsl" href="configuration.xsl"?>
+
+<configuration>
+  <property>
+    <name>javax.jdo.option.ConnectionURL</name>
+    <value>jdbc:mysql://hivedb01/hive_metastore</value>
+  </property>
+
+  <property>
+    <name>javax.jdo.option.ConnectionDriverName</name>
+    <value>com.mysql.jdbc.Driver</value>
+  </property>
+
+  <property>
+    <name>javax.jdo.option.ConnectionUserName</name>
+    <value>hive</value>
+  </property>
+
+  <property>
+    <name>javax.jdo.option.ConnectionPassword</name>
+    <value>cviowe23</value>
+  </property>
+
+  <property>
+    <name>datanucleus.autoCreateSchema</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>datanucleus.fixedDatastore</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>hive.exec.compress.intermediate</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>hive.exec.parallel</name>
+    <value>true</value>
+  </property>
+
+  <property>
+    <name>hive.mapred.reduce.tasks.speculative.execution</name>
+    <value>false</value>
+  </property>
+
+  <property>
+    <name>hive.aux.jars.path</name>
+    <value>file:///usr/lib/hive/lib/guava-r09.jar,file:///usr/lib/hive/lib/zookeeper.jar,file:///usr/lib/hive/lib/hbase.jar,file:///usr/lib/hive/lib/hive-hbase-handler-0.8.1-cdh4.0.1.jar,file:///usr/lib/hive/lib/avro-1.5.4.jar,file:///usr/lib/hive/lib/avro-mapred-1.5.4.jar,file:///usr/lib/hive/lib/haivvreo-1.0.7-cdh-4.jar</value>
+    <description>Needed for HBase integration</description>
+  </property>
+
+  <property>
+    <name>hbase.zookeeper.quorum</name>
+    <value><YOUR ZOOKEEPER ></value>
+  </property>
+</configuration>
